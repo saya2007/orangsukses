@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Halo kanda, Saya Avriarchitect!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ig:avriarchitect</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+      background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
+      margin: 0;
       padding: 40px;
+      text-align: center;
       color: #333;
     }
     h1 {
       font-size: 3em;
-      color: #222;
+      color: #ff4081;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-in-out;
     }
     p {
-      font-size: 1.5em;
-      margin-top: 10px;
+      font-size: 1.2em;
+      animation: fadeIn 2s ease-in-out;
     }
     img {
       margin-top: 30px;
       border-radius: 20px;
       width: 300px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      animation: zoomIn 1.5s ease-in-out;
+    }
+    button {
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 1em;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h1>Nama saya Rian, dari Makassar 😎</h1>
-  <p>Semoga yang baca ini semakin Bahagia, sukses, banyak duitnya, keren dan sehat terus. 
-    Dan jangan lupa menjadi orang yg baik dan dermawan! </p>
-  <img src="Screenshot 2025-06-04 160507.png" alt="sekian dan terima kasih" width="300">
+  <h1>Halo Kanda, Nama saya Rian, dari Makassar 😎</h1>
+  <p>Semoga yang baca ini semakin Bahagia, sukses, banyak duitnya, keren dan sehat terus. Dan jangan lupa menjadi orang yg baik dan dermawan!</p>
+  <img src="Screenshot 2025-06-04 160507.png" alt="Sekian dan terima kasih" />
+
+  <button onclick="playSound()"> Semangat!</button>
+
+  <audio id="mySound">
+    <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playSound() {
+      document.getElementById('mySound').play();
+    }
+  </script>
 </body>
 </html>

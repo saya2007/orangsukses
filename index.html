@@ -13,26 +13,25 @@
       text-align: center;
       color: #333;
     }
+    
      @keyframes move {
       0% { transform: translateX(0); }
       50% { transform: translateX(10px); }
       100% { transform: translateX(0); }
+     }
+    
     h1 {
       font-size: 2em;
       color: #ff7e59;
       margin-bottom: 10px;
      animation: move 2s infinite ease-in-out;
 }
-
-h1 {
-  animation: move 2s infinite ease-in-out;
-}
-
-    }
+    
     p {
       font-size: 1.2em;
       animation: fadeIn 2s ease-in-out;
     }
+    
     img {
       margin-top: 30px;
       border-radius: 20px;
@@ -40,6 +39,7 @@ h1 {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       animation: zoomIn 1.5s ease-in-out;
     }
+    
     button {
       margin-top: 30px;
       padding: 15px 25px;
@@ -51,18 +51,21 @@ h1 {
       cursor: pointer;
       transition: background 0.3s;
     }
+    
     button:hover {
       background-color: #0097a7;
     }
-
+    
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
+    
     @keyframes zoomIn {
       from { opacity: 0; transform: scale(0.8); }
       to { opacity: 1; transform: scale(1); }

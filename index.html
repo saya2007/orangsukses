@@ -18,6 +18,16 @@
       color: #ffb9a5;
       margin-bottom: 10px;
       animation: fadeInDown 3s ease-in-out;
+      @keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+h1 {
+  animation: move 2s infinite ease-in-out;
+}
+
     }
     p {
       font-size: 1.2em;
